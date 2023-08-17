@@ -145,7 +145,12 @@ dog_menu(enter_dog_name = "Waffle")
 df_means <- function (df) {
   for (i in seq_along(df)) {
     col_mean <- mean(df[[i]], na.rm = TRUE) # vector of column
-    column_name <-colnames(df[[i]])
+    column_name <-colnames(df[i]) # title of column
+    print(paste("The mean value of", column_name, "is", col_mean))
   }
 }
+```
+
+```{r}
+df_means(df = mtcars)
 ```
