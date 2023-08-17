@@ -6,6 +6,10 @@ execute:
   warning: false
 ---
 
+```{r}
+library(tidyverse)
+```
+
 ## Functions
 
 Make a function that doubles a value.
@@ -113,4 +117,35 @@ temp <- function (user, kelvin) {
 
 ```{r}
 temp("english",232)
+```
+
+## More functions
+
+Create a subset within a function, and then return something based on that subset. \
+
+```{r}
+dog_choice <- data.frame(dog_name = c("Khora", "Teddy", "Waffle", "Banjo", "Tallie"), 
+food = c("everything", "salmon", "pancake", "chicken", "enchiladas"))
+```
+
+```{r}
+dog_menu <- function (enter_dog_name) {
+  my_subset <- filter (dog_choice, dog_name == enter_dog_name )
+  print (paste("My name is", my_subset$dog_name, "and my favorite food is",my_subset$food))
+}
+```
+
+```{r}
+dog_menu(enter_dog_name = "Waffle")
+```
+
+## Function with a for loop
+
+```{r}
+df_means <- function (df) {
+  for (i in seq_along(df)) {
+    col_mean <- mean(df[[i]], na.rm = TRUE) # vector of column
+    column_name <-colnames(df[[i]])
+  }
+}
 ```
