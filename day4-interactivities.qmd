@@ -1,0 +1,76 @@
+---
+title: "day4-interactivities"
+format: html
+editor: visual
+execute: 
+  warning: false
+---
+
+## Functions
+
+Make a function that doubles a value.
+
+```{r}
+double_value <- function(my_dollars){
+  print(2*my_dollars)
+}
+```
+
+```{r}
+double_value(my_dollars = 10.3)
+```
+
+```{r}
+monthly_income <- c(42.50, 61, 75, 89.50)
+
+
+```
+
+Create a function that returns an awesome restaurant name given a cool animal and your favorite good.
+
+```{r}
+name_restaurant <- function(animal,food) {
+  print (paste0(animal,food))
+}
+
+name_restaurant(anima = "hawk", food = "pizza")
+```
+
+Given temperature in degrees Fahrenheit, write a function that converts it to Celsius.
+
+```{r}
+convert_f_to_c <- function (temp_f) {
+  temp_c = 5/9 * (temp_f-32)
+  return (temp_c)
+}
+```
+
+```{r}
+convert_f_to_c (52)
+```
+
+Create a function that given inputs of age and hometown, returns "I am \_\_\_ years old, and I'm from \_\_\_\_"
+
+```{r}
+personal_info <- function (age, birth_country) {
+  print (paste("I am", age, "years old, and I'm from",birth_country,"."))
+}
+```
+
+```{r}
+personal_info(1,"north pole")
+```
+
+```{r}
+double_value2 <- function(dollars) {
+  dollars*2
+}
+```
+
+```{r}
+double_value2(dollars = 10)
+```
+
+Print statements and return statements
+
+Print: "show me ", Return: "store this so I can use it later"
