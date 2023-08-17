@@ -73,7 +73,9 @@ double_value2(dollars = 10)
 
 Print statements and return statements
 
-Print: "show me ", Return: "store this so I can use it later"
+-   Print: "show me"
+
+-   Return: "store this so I can use it later"
 
 ## Functions with conditionals
 
